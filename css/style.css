@@ -8,10 +8,19 @@
   font-weight: 400;
   font-style: normal;
 }
-
-.text-black{
+.curriculumn-title{
+    font-size: 1.6rem;
+    font-weight: 700;
     color:#111111;
-    font-size: 1.3rem;
+}
+.description{
+    color:#111111;
+    font-size: 1.2rem;
+}
+.story-description{
+    font-size: 1rem;
+    color:#111111;
+
 }
 .display-flex{
     display: flex;
@@ -20,9 +29,11 @@
     background-color: #FEA301;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 16px;
     height: 50px;
     width: 190px;
+    font-size: 1.2rem;
+    font-weight: 600;
    
 }
 .navbar{
@@ -46,11 +57,29 @@
 }
 .nav-link{
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
-.navbar,.banner{
+.home{
+    color: #FEA301;
+   
+}
+.about{
+    color:rgb(1, 172, 253);
+}
+.admission{
+    color: rgb(93, 88, 239);
+}
+.facilities{
+    color:rgb(1, 172, 253);
+}
+.navbar,.banner,.standard-curriculumn,.stories,.footer-container{
     max-width: 1240px;
     margin: 0 auto;
 }
+/* .curriculumn-container,.stories-container{
+    width: 1160px;
+} */
 .banner{
     flex-direction: row-reverse;
     gap: 50px;
@@ -79,15 +108,259 @@
    color: white;
    border-radius: 5px;
 }
-@media  screen and (max-width:576px) {
-    .display-flex,.banner{
-        flex-direction: column;
-        
-    }
-    .banner{
-        justify-content: center;
-        align-items: center;
-    }
-
+.standard-curriculumn{
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    background-image: url(/assets/bg.png);
+}
+.curriculumn-container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+ 
 
 }
+.curriculumn-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+.curriculumn-heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.curriculumn{
+   width: 100%;
+     max-width: 340px; 
+    height: 500px;
+    /* height: auto;  */
+    border: 1px solid rgb(255, 244, 220);
+    border-radius:16px ;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+    margin: 0 auto;
+    /* background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255); */
+}
+.box1{
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.box2{
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.box3{
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.special-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(254, 163, 1);
+    border: none;
+    color: white;
+}
+.btn1,.btn2,.btn3{
+    height:auto;
+    width: auto;
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.btn1{
+    color: rgb(100, 200, 255);
+
+}
+.btn2{
+    color: rgb(240, 170, 0);
+}
+.btn3{
+    color: rgb(135, 0, 255);
+}
+.stories{
+    background: url(assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+flex-direction: column;
+align-items: center;
+justify-self: center;
+text-align: center;
+margin: 0 auto;
+background-size: cover; 
+background-repeat: no-repeat; 
+background-position: center;
+}
+.stories-container{
+    gap: 20px;
+padding: 60px 140px;
+}
+.secondary-stories-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-items: center; /* Center align items */
+    align-items: center;
+    padding: 20px; /* Add padding for spacing */
+    margin: 0 auto;
+}
+.story1,.secondary-stories{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+
+    /* background: url(),rgb(217, 217, 217);; */
+}
+.story1,.secondary-stories{border-radius: 16px;
+
+    background: rgb(255, 255, 255);
+}
+.round{
+    border-radius: 16px 16px 0px 0px;
+
+    background: url(),rgb(217, 217, 217);
+    height: 45%;
+}
+.secondary-stories{
+    width: 100%;
+    max-width: 290px;
+    height:300px ; 
+    text-align: center;
+    
+}
+.first-story{
+   background-color:  rgb(60, 216, 232);
+   height: 640px;
+   width: 530px;
+}
+.secondary-btn{
+    background-color: rgb(149, 178, 38);
+}
+.first-story,.secondary-btn{
+    margin-left: 30px;
+    margin-top: -30px;
+    width: 100%;
+   max-width: 120px;
+    height: 50px;
+    border-radius: 48px;
+    border: none;
+    color: white;
+}
+.view-btn{
+    background-color: #111111;
+    color: white;
+    border-radius: 16px;
+    border: none;
+    width: 100%;
+    max-width: 170px;
+    height: 50px;
+    margin-bottom: 60px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.footer-container{
+    background: rgb(1, 172, 253);
+    justify-content: center;
+    align-items: center;
+    /* padding: 60px 120px; */
+}
+  /* footer>p{
+    color: white;
+  }  */
+  .footer-description{
+align-items: center;
+justify-content: space-evenly;
+padding: 140px;
+color: white;
+ }   
+ 
+  
+  .footer-description {
+    display: flex; 
+    justify-content:center; 
+    align-items: flex-start; 
+    gap: 20px;
+  }
+  
+  .education,
+  .footer-nav,
+  .social-links {
+    flex: 1; 
+   
+  }
+  
+  .footer-description img {
+    max-width: 100%; 
+    height: auto; 
+  }
+  
+  .footer-description .footer-links {
+    list-style: none; 
+   
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-description .footer-item {
+    margin-bottom: 10px; 
+  }
+  
+  .footer-description .footer-link {
+    text-decoration: none;
+    color: white;
+   
+  }
+  .footer-paragraph{
+    color: white;
+  }
+  .footer-description .footer-icon {
+    width: 30px; 
+    height: 30px;
+    margin-right: 10px; 
+  }
+  
+
+
+  @media screen and (max-width: 576px) {
+    .display-flex,
+    .banner,
+    .curriculumn-container,
+    .stories-container,
+    .footer-description {
+      flex-direction: column;
+      margin: 0,auto;
+    }
+  .banner-content{
+    text-align: center;
+  }
+    
+    .secondary-stories-container {
+    
+      grid-template-columns: repeat(2, 1fr);
+     
+      
+      margin: 20px 0px;
+      padding:0;
+      gap:15px;
+      justify-items: center;
+      align-items: center;
+      
+      
+    }
+         .secondary-stories {
+            width: 160px;
+            height: 180px;
+             overflow: hidden; 
+     
+       
+    } 
+    .special-btn,.story1{
+        display: none;
+    } 
+   
+  }
